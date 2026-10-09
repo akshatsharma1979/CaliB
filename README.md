@@ -213,14 +213,14 @@ Suggested Render flow:
 DATABASE_URL="postgres://..." python3 scripts/load_csv.py --reset
 ```
 
-5. Add the live URL here before submitting:
+Live deployment:
 
 ```text
-Deployed URL: TODO
-GitHub repository: TODO
+Deployed URL: https://calib-dashboard.onrender.com
+GitHub repository: https://github.com/akshatsharma1979/CaliB.git
 ```
 
-Actual deployment was not completed inside this workspace because GitHub/Render/Vercel account connections are required. The project is structured so it can be deployed once those connections are available.
+The Render deployment is configured to use the bundled CSV fallback when the managed PostgreSQL database has not been loaded yet, so the live dashboard remains functional while still supporting the PostgreSQL ETL path.
 
 ## Submission Checklist
 
