@@ -1,0 +1,17 @@
+{
+  "name": "calib-analytics-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Business analytics dashboard for the CaliB technical assessment.",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "npm run build --workspace client",
+    "start": "npm run start --workspace server",
+    "lint": "npm run lint --workspace client && npm run lint --workspace server",
+    "etl": "python3 scripts/load_csv.py --reset"
+  }
+}
